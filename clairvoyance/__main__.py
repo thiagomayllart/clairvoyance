@@ -62,7 +62,6 @@ def parse_args():
 
 if __name__ == "__main__":
     args = parse_args()
-
     format = "[%(levelname)s][%(asctime)s %(filename)s:%(lineno)d]\t%(message)s"
     datefmt = "%Y-%m-%d %H:%M:%S"
     logging.getLogger("urllib3").setLevel(logging.WARNING)
